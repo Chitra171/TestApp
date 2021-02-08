@@ -16,11 +16,11 @@ class AgeException extends RuntimeException
  {
 	void Age(int Age)throws Exception
 	{
-		if(Age>18) {
-			throw new Exception("you can Vote");
+		if(Age<18) {
+			throw new Exception("you cannot Vote");
 		}
 		else
-			System.out.println("you cannot Vote");
+			System.out.println("you can Vote");
 	}
 }
 
@@ -37,7 +37,7 @@ class AgeException extends RuntimeException
 	
 	{
     CheckAge a=new CheckAge();
-    a.Age(17);
+    a.Age(19);
 	}
 
 }
